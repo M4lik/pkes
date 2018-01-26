@@ -14,11 +14,6 @@
 #include <math.h>
 
 
-
-
-
-
-
 #define OUTPUT__BAUD_RATE 57600
 FrameStream frm(Serial1);
 
@@ -31,43 +26,45 @@ declarerunnerlist(GUI);
 
 // First level will be called by frm.run (if a frame is recived)
 beginrunnerlist();
+
 fwdrunner(!g, GUIrunnerlist); //forward !g to the second level (GUI)
 callrunner(!!, InitGUI);
-fwdrunner(ST, stickdata);
+fwdrunner(ST, stickdata
+);
+
 endrunnerlist();
 
 // GUI level
 beginrunnerlist(GUI);
-callrunner(es, CallbackSTOP);
-callrunner(ms, CallbackSTART);
+callrunner(es, CallbackSTOP
+);
+callrunner(ms, CallbackSTART
+);
+
 endrunnerlist();
 
 
-void stickdata(char* str, size_t length)
-{
+void stickdata(char *str, size_t length) {
     int left = (int) atof(str);
-    int i; int right=0;
-    for(i=0; i<length; i++){
-        if (*(str+i)==','){
-            right=(int) atof(str+i+1);
+    int i;
+    int right = 0;
+    for (i = 0; i < length; i++) {
+        if (*(str + i) == ',') {
+            right = (int) atof(str + i + 1);
             break;
         }
     }
-    setMotors(left,right);
+    setMotors(left, right);
 }
 
-void CallbackSTOP()
-{
+void CallbackSTOP() {
     deactivateMotors();
 }
 
 
-void CallbackSTART()
-{
+void CallbackSTART() {
     activateMotors();
 }
-
-
 
 
 /*
@@ -76,8 +73,7 @@ void CallbackSTART()
  * In this function, the GUI, is configured. For this, Arduinoview shorthand,
  * HTML as well as embedded JavaScript can be used.
  */
-void InitGUI()
-{
+void InitGUI() {
     delay(500);
 
     frm.print(F("!SbesvSTOP"));
@@ -148,10 +144,6 @@ void InitGUI()
     frm.end();
 
 
-
-
-
-
 }
 
 /*
@@ -161,8 +153,7 @@ void InitGUI()
  */
 
 
-void setup()
-{
+void setup() {
     //prepare Serial interfaces
     Serial.begin(OUTPUT__BAUD_RATE);
     Serial1.begin(OUTPUT__BAUD_RATE);
@@ -192,20 +183,19 @@ void setup()
  *  main behavior of the program.
  */
 
-void loop()
-{
+void loop() {
 
-    every(50){
+    every(50) {
         motorMain();
 
     }
-    every(75){
+    every(75) {
         //VelocityData vD = getVelocityValues(0.5,0.5);
         //setVelocityMotors(vD.left,vD.right);
         //activateMotors();
     }
 
     // read & run ArduinoView Frames
-    while(frm.run());
+    while (frm.run());
 }
 

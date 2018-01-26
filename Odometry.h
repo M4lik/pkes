@@ -10,15 +10,12 @@
 #include <Arduino.h>
 
 
-
-struct OdomData
-{
+struct OdomData {
     volatile int32_t left;
     volatile int32_t right;
 };
 
-struct VelocityData
-{
+struct VelocityData {
     float left;
     float right;
 };
@@ -28,6 +25,6 @@ struct VelocityData
 void initOdom();
 
 //writes count courrent of ticks to structure
-void odomTicks(struct OdomData&);
+void odomTicks(struct OdomData &);
 
 VelocityData getVelocityData();

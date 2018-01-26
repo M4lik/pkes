@@ -5,12 +5,13 @@
 
 /* Function forward declaration*/
 void deactivateMotors();
+
 void activateMotors();
 /* Global vars */
 
 /* Functions */
 
-void initMotors(){
+void initMotors() {
     TCCR4D &= ~_BV(WGM41);
     TCCR4D &= ~_BV(WGM40);
 
@@ -27,13 +28,13 @@ void initMotors(){
     TCCR4C |= _BV(PWM4D);// Enable
 }
 
-void setMotors(int8_t left, int8_t right){
-    OCR4B = 127+(left * -1);
-    OCR4D = 127+right;
+void setMotors(int8_t left, int8_t right) {
+    OCR4B = 127 + (left * -1);
+    OCR4D = 127 + right;
 }
 
-void setVelocityMotors(float left, float right){
-    setMotors(left*127/0.6, right*127/0.6);
+void setVelocityMotors(float left, float right) {
+    setMotors(left * 127 / 0.6, right * 127 / 0.6);
 }
 
 void deactivateMotors() {
