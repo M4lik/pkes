@@ -9,6 +9,8 @@ volatile int32_t templeft = 0;
 volatile int32_t tempright = 0;
 OdomData odomData = {.left=0, .right=0};
 
+extern volatile int32_t sumOfTicks;
+
 void initOdom() {
 
     DDRB &= ~(1 << PB0); //Odometry to input
@@ -29,6 +31,7 @@ VelocityData getVelocityData() {
     cli();
     velocityData.left = (float) templeft / 2195 / 0.075;
     velocityData.right = (float) tempright / 2195 / 0.075;
+    sumOfTicks += templeft;
     templeft = 0;
     tempright = 0;
     sei();

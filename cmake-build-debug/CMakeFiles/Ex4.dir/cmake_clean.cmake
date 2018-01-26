@@ -2,7 +2,7 @@ file(REMOVE_RECURSE
         "CMakeFiles/Ex4.dir/MotorControl.cpp.o"
         "CMakeFiles/Ex4.dir/Odometry.cpp.o"
         "CMakeFiles/Ex4.dir/PID.cpp.o"
-        "CMakeFiles/Ex4.dir/Motor.cpp.o"
+        "CMakeFiles/Ex4.dir/WallFollow.cpp.o"
         "CMakeFiles/Ex4.dir/Distance.cpp.o"
         "Ex4.pdb"
         "Ex4"

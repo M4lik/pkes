@@ -12,7 +12,9 @@ uint16_t linearizeLR(uint16_t);
 
 int16_t readADC(uint8_t);
 
-uint16_t distance();
+uint16_t getDistance();
+
+uint32_t getMeanDistance();
 
 
 #endif

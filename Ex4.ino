@@ -11,6 +11,7 @@
 #include "PID.h"
 #include "everytime.h"
 #include "MotorControl.h"
+#include "WallFollow.h"
 #include <math.h>
 
 
@@ -153,7 +154,8 @@ void InitGUI() {
  */
 
 
-void setup() {
+void setup()
+{
     //prepare Serial interfaces
     Serial.begin(OUTPUT__BAUD_RATE);
     Serial1.begin(OUTPUT__BAUD_RATE);
@@ -174,6 +176,11 @@ void setup() {
     //initSensors();
     initMotors();
     deactivateMotors();
+
+    for(int i=0;i<100;i++)
+    {
+        distances[i]=1000;
+    }
 }
 
 /*
@@ -183,19 +190,20 @@ void setup() {
  *  main behavior of the program.
  */
 
-void loop() {
+void loop()
+{
 
-    every(50) {
-        motorMain();
-
+    every(10){
+        i++;
+        if(i==100)
+        \t\ti=0;
+        distances[i]=getDistance();
     }
-    every(75) {
-        //VelocityData vD = getVelocityValues(0.5,0.5);
-        //setVelocityMotors(vD.left,vD.right);
-        //activateMotors();
+
+    every(50){
+        motorMain();
     }
 
     // read & run ArduinoView Frames
-    while (frm.run());
+    while(frm.run());
 }
-

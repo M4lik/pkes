@@ -1,5 +1,5 @@
 #pragma once
 
-float pidleft(float v);
+#include "Odometry.h"
 
-float pidright(float v);
+VelocityData getVelocityValues(float targetVelocityL, float targetVelocityR);

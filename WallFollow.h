@@ -1,14 +1,15 @@
-#pragma once
+void motorMain();
 
-#include <inttypes.h>
+void rotation(int16_t a);
 
-// initialise timer(s) here
-void initMotors();
+bool isDoneRotating();
 
-// control the motor-power, pay attention to the direction of rotation
-void setMotors(int8_t left, int8_t right);
+void findWall();
 
-// you may use this to set Motor-DDRs
-void deactivateMotors();
+void turnWall();
 
-void activateMotors();
+void parallelize();
+
+void waitstate();
+
+void drive();

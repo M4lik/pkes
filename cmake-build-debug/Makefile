@@ -150,33 +150,6 @@ Distance.cpp.s:
 	$(MAKE) -f CMakeFiles/Ex4.dir/build.make CMakeFiles/Ex4.dir/Distance.cpp.s
 .PHONY : Distance.cpp.s
 
-Motor.o: Motor.cpp.o
-
-.PHONY : Motor.o
-
-# target to build an object file
-Motor.cpp.o:
-	$(MAKE) -f CMakeFiles/Ex4.dir/build.make CMakeFiles/Ex4.dir/Motor.cpp.o
-.PHONY : Motor.cpp.o
-
-Motor.i: Motor.cpp.i
-
-.PHONY : Motor.i
-
-# target to preprocess a source file
-Motor.cpp.i:
-	$(MAKE) -f CMakeFiles/Ex4.dir/build.make CMakeFiles/Ex4.dir/Motor.cpp.i
-.PHONY : Motor.cpp.i
-
-Motor.s: Motor.cpp.s
-
-.PHONY : Motor.s
-
-# target to generate assembly for a file
-Motor.cpp.s:
-	$(MAKE) -f CMakeFiles/Ex4.dir/build.make CMakeFiles/Ex4.dir/Motor.cpp.s
-.PHONY : Motor.cpp.s
-
 MotorControl.o: MotorControl.cpp.o
 
 .PHONY : MotorControl.o
@@ -258,6 +231,33 @@ PID.cpp.s:
 	$(MAKE) -f CMakeFiles/Ex4.dir/build.make CMakeFiles/Ex4.dir/PID.cpp.s
 .PHONY : PID.cpp.s
 
+WallFollow.o: WallFollow.cpp.o
+
+.PHONY : WallFollow.o
+
+# target to build an object file
+WallFollow.cpp.o:
+	$(MAKE) -f CMakeFiles/Ex4.dir/build.make CMakeFiles/Ex4.dir/WallFollow.cpp.o
+.PHONY : WallFollow.cpp.o
+
+WallFollow.i: WallFollow.cpp.i
+
+.PHONY : WallFollow.i
+
+# target to preprocess a source file
+WallFollow.cpp.i:
+	$(MAKE) -f CMakeFiles/Ex4.dir/build.make CMakeFiles/Ex4.dir/WallFollow.cpp.i
+.PHONY : WallFollow.cpp.i
+
+WallFollow.s: WallFollow.cpp.s
+
+.PHONY : WallFollow.s
+
+# target to generate assembly for a file
+WallFollow.cpp.s:
+	$(MAKE) -f CMakeFiles/Ex4.dir/build.make CMakeFiles/Ex4.dir/WallFollow.cpp.s
+.PHONY : WallFollow.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -270,9 +270,6 @@ help:
 	@echo "... Distance.o"
 	@echo "... Distance.i"
 	@echo "... Distance.s"
-	@echo "... Motor.o"
-	@echo "... Motor.i"
-	@echo "... Motor.s"
 	@echo "... MotorControl.o"
 	@echo "... MotorControl.i"
 	@echo "... MotorControl.s"
@@ -282,6 +279,9 @@ help:
 	@echo "... PID.o"
 	@echo "... PID.i"
 	@echo "... PID.s"
+	@echo "... WallFollow.o"
+	@echo "... WallFollow.i"
+	@echo "... WallFollow.s"
 .PHONY : help
 
 

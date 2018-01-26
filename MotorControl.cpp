@@ -1,4 +1,5 @@
-#include "MotorControl.h"
+include "MotorControl.h"
+
 #include <FrameStream.h>
 #include <Frameiterator.h>
 #include <avr/io.h>
@@ -21,11 +22,11 @@ void initMotors() {
     TCCR4B &= ~_BV(CS43);
 
     TCCR4A &= ~_BV(COM4B1);   // Set phase correct timer M2
-    TCCR4A |= _BV(COM4B0);
-    TCCR4A |= _BV(PWM4B);// Enable
+    TCCR4A |= _BV(COM4B0);\t
+    TCCR4A |= _BV(PWM4B);\t\t// Enable
     TCCR4C &= ~_BV(COM4D1);   // Set phase correct timer M1
     TCCR4C |= _BV(COM4D0);
-    TCCR4C |= _BV(PWM4D);// Enable
+    TCCR4C |= _BV(PWM4D);\t\t// Enable
 }
 
 void setMotors(int8_t left, int8_t right) {

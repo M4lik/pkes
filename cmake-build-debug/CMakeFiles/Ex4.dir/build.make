@@ -129,28 +129,28 @@ CMakeFiles/Ex4.dir/PID.cpp.o.provides: CMakeFiles/Ex4.dir/PID.cpp.o.requires
 CMakeFiles/Ex4.dir/PID.cpp.o.provides.build: CMakeFiles/Ex4.dir/PID.cpp.o
 
 
-CMakeFiles/Ex4.dir/Motor.cpp.o: CMakeFiles/Ex4.dir/flags.make
-CMakeFiles/Ex4.dir/Motor.cpp.o: ../Motor.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/malik/Downloads/ex4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Ex4.dir/Motor.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Ex4.dir/Motor.cpp.o -c /home/malik/Downloads/ex4/Motor.cpp
+CMakeFiles/Ex4.dir/WallFollow.cpp.o: CMakeFiles/Ex4.dir/flags.make
+CMakeFiles/Ex4.dir/WallFollow.cpp.o: ../WallFollow.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/malik/Downloads/ex4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Ex4.dir/WallFollow.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Ex4.dir/WallFollow.cpp.o -c /home/malik/Downloads/ex4/WallFollow.cpp
 
-CMakeFiles/Ex4.dir/Motor.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Ex4.dir/Motor.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/malik/Downloads/ex4/Motor.cpp > CMakeFiles/Ex4.dir/Motor.cpp.i
+CMakeFiles/Ex4.dir/WallFollow.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Ex4.dir/WallFollow.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/malik/Downloads/ex4/WallFollow.cpp > CMakeFiles/Ex4.dir/WallFollow.cpp.i
 
-CMakeFiles/Ex4.dir/Motor.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Ex4.dir/Motor.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/malik/Downloads/ex4/Motor.cpp -o CMakeFiles/Ex4.dir/Motor.cpp.s
+CMakeFiles/Ex4.dir/WallFollow.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Ex4.dir/WallFollow.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/malik/Downloads/ex4/WallFollow.cpp -o CMakeFiles/Ex4.dir/WallFollow.cpp.s
 
-CMakeFiles/Ex4.dir/Motor.cpp.o.requires:
+CMakeFiles/Ex4.dir/WallFollow.cpp.o.requires:
 
-.PHONY : CMakeFiles/Ex4.dir/Motor.cpp.o.requires
+.PHONY : CMakeFiles/Ex4.dir/WallFollow.cpp.o.requires
 
-CMakeFiles/Ex4.dir/Motor.cpp.o.provides: CMakeFiles/Ex4.dir/Motor.cpp.o.requires
-	$(MAKE) -f CMakeFiles/Ex4.dir/build.make CMakeFiles/Ex4.dir/Motor.cpp.o.provides.build
-.PHONY : CMakeFiles/Ex4.dir/Motor.cpp.o.provides
+CMakeFiles/Ex4.dir/WallFollow.cpp.o.provides: CMakeFiles/Ex4.dir/WallFollow.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Ex4.dir/build.make CMakeFiles/Ex4.dir/WallFollow.cpp.o.provides.build
+.PHONY : CMakeFiles/Ex4.dir/WallFollow.cpp.o.provides
 
-CMakeFiles/Ex4.dir/Motor.cpp.o.provides.build: CMakeFiles/Ex4.dir/Motor.cpp.o
+CMakeFiles/Ex4.dir/WallFollow.cpp.o.provides.build: CMakeFiles/Ex4.dir/WallFollow.cpp.o
 
 
 CMakeFiles/Ex4.dir/Distance.cpp.o: CMakeFiles/Ex4.dir/flags.make
@@ -182,7 +182,7 @@ Ex4_OBJECTS = \
 "CMakeFiles/Ex4.dir/MotorControl.cpp.o" \
 "CMakeFiles/Ex4.dir/Odometry.cpp.o" \
 "CMakeFiles/Ex4.dir/PID.cpp.o" \
-"CMakeFiles/Ex4.dir/Motor.cpp.o" \
+"CMakeFiles/Ex4.dir/WallFollow.cpp.o" \
 "CMakeFiles/Ex4.dir/Distance.cpp.o"
 
 # External object files for target Ex4
@@ -191,7 +191,7 @@ Ex4_EXTERNAL_OBJECTS =
 Ex4: CMakeFiles/Ex4.dir/MotorControl.cpp.o
 Ex4: CMakeFiles/Ex4.dir/Odometry.cpp.o
 Ex4: CMakeFiles/Ex4.dir/PID.cpp.o
-Ex4: CMakeFiles/Ex4.dir/Motor.cpp.o
+Ex4: CMakeFiles/Ex4.dir/WallFollow.cpp.o
 Ex4: CMakeFiles/Ex4.dir/Distance.cpp.o
 Ex4: CMakeFiles/Ex4.dir/build.make
 Ex4: CMakeFiles/Ex4.dir/link.txt
@@ -206,7 +206,7 @@ CMakeFiles/Ex4.dir/build: Ex4
 CMakeFiles/Ex4.dir/requires: CMakeFiles/Ex4.dir/MotorControl.cpp.o.requires
 CMakeFiles/Ex4.dir/requires: CMakeFiles/Ex4.dir/Odometry.cpp.o.requires
 CMakeFiles/Ex4.dir/requires: CMakeFiles/Ex4.dir/PID.cpp.o.requires
-CMakeFiles/Ex4.dir/requires: CMakeFiles/Ex4.dir/Motor.cpp.o.requires
+CMakeFiles/Ex4.dir/requires: CMakeFiles/Ex4.dir/WallFollow.cpp.o.requires
 CMakeFiles/Ex4.dir/requires: CMakeFiles/Ex4.dir/Distance.cpp.o.requires
 
 .PHONY : CMakeFiles/Ex4.dir/requires

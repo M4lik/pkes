@@ -1,6 +1,5 @@
 #include "Distance.h"
 #include <Arduino.h>
-#include <Frameiterator.h>
 #include <avr/io.h>
 #include <util/delay.h>
 
@@ -17,9 +16,8 @@ uint16_t LookupLong[18] =
          300, 280, 260, 240, 220,
          200, 190, 175};//2700 mV - 1000 mV
 
+extern uint32_t distances[];
 
-
-uint16_t ADC_mV_Faktor;
 
 /**
  * @brief Configures the ADC related to mode, clock speed, gain
@@ -30,27 +28,32 @@ uint16_t ADC_mV_Faktor;
  * range of the sensor.
  */
 void configADC() {
-    ADMUX |= _BV(REFS0);  // Vcc reference
-    ADCSRA |= _BV(ADEN);  // Enable
+    ADCSRA |= (1 << ADEN); //Enable ADC
+    //ADCSRA |= (1<<ADATE); //Enable AUTO-Trigger
+    //ADMUX |= (1<<ADLAR); //Enable 8-bit precision
+    ADMUX |= (1 << REFS0); //Reference voltage 3300mv
+
 }
 
 /**
  * @brief Starts a single conversion and receives a result return in mV
  */
 int16_t readADC(uint8_t channel) {
+    //Select input
+    if (channel > 0) ADMUX |= (1 << MUX0);
+    else ADMUX &= ~(1 << MUX0);
 
-    if (channel == 0)
-        ADMUX &= ~_BV(MUX0);
-    else
-        ADMUX |= _BV(MUX0);
-
-    ADCSRA |= _BV(ADSC); //trigger measurement
+    //Manual trigger
+    ADCSRA |= (1 << ADSC);
+    //Wait for conversion
     _delay_us(1);
 
-    int16_t val = ADCL;
-    val |= ((uint16_t) ADCH << 8);
-    uint16_t mV = (float) val * 3.2258f;
-    return val;
+    int16_t mV;
+
+    // mV = (ADCH*4*3.226);//*4 --> 8-bit, *3,226 --> V input
+    mV = (ADCL + 256 * ADCH) * 3.226;
+
+    return mV;
 }
 
 /**
@@ -58,7 +61,43 @@ int16_t readADC(uint8_t channel) {
  *        in mm
  */
 uint16_t linearizeSR(uint16_t distmV) {
-    if (distmV < 600) return 0;
-    if (distmV > 3000) return 65000;
-    return LookupShort[(int) floor((distmV - 600) / 100)];
+    if (distmV > 3000) return 0; //too close
+    if (distmV < 600) return 0; //too far away
+//if(distmV%100 != 0) return (LookupShort[(int)floor((distmV-600)/100)]+
+    //                          LookupShort[(int)ceil((distmV-600)/100)])/2; //Interpolation
+    return LookupShort[(int) floor((distmV - 600) / 100)]; //LookUp
+
+}
+
+/**
+ * @brief Maps the digital voltage information on a distance
+ *        in mm
+ */
+uint16_t linearizeLR(uint16_t distmV) {
+    if (distmV > 2700) return 0; //too close
+    if (distmV < 1000) return 0; //too far away
+//if(distmV%100 != 0) return (LookupShort[(int)floor((distmV-1000)/100)]+
+//                            LookupShort[(int)ceil((distmV-1000)/100)])/2; //Interpolation
+    return LookupLong[(int) floor((distmV - 1000) / 100)];
+
+}
+
+uint16_t getDistance() {   //"Better" distances
+    uint16_t val0 = linearizeLR(readADC(0));
+    uint16_t val1 = linearizeSR(readADC(1));
+
+    if (val0 == 0 || val1 == 0) return val1 + val0;
+
+    return (uint16_t) (val0 + val1) / 2;
+
+
+}
+
+
+uint32_t getMeanDistance() {
+    uint32_t result = 0;
+    for (int i = 0; i < 100; i++) {
+        result += distances[i] / 100;
+    }
+    return result;
 }

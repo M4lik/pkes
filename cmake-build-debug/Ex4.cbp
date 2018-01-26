@@ -96,12 +96,6 @@
 		<Unit filename="/home/malik/Downloads/ex4/IMURegisters.h">
 			<Option target="Ex4"/>
 		</Unit>
-		<Unit filename="/home/malik/Downloads/ex4/Motor.cpp">
-			<Option target="Ex4"/>
-		</Unit>
-		<Unit filename="/home/malik/Downloads/ex4/Motor.h">
-			<Option target="Ex4"/>
-		</Unit>
 		<Unit filename="/home/malik/Downloads/ex4/MotorControl.cpp">
 			<Option target="Ex4"/>
 		</Unit>
@@ -118,6 +112,12 @@
 			<Option target="Ex4"/>
 		</Unit>
 		<Unit filename="/home/malik/Downloads/ex4/PID.h">
+			<Option target="Ex4"/>
+		</Unit>
+		<Unit filename="/home/malik/Downloads/ex4/WallFollow.cpp">
+			<Option target="Ex4"/>
+		</Unit>
+		<Unit filename="/home/malik/Downloads/ex4/WallFollow.h">
 			<Option target="Ex4"/>
 		</Unit>
 		<Unit filename="/home/malik/Downloads/ex4/everytime.h">

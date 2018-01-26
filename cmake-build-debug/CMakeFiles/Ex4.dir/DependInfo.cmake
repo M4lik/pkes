@@ -5,10 +5,10 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
         "/home/malik/Downloads/ex4/Distance.cpp" "/home/malik/Downloads/ex4/cmake-build-debug/CMakeFiles/Ex4.dir/Distance.cpp.o"
-        "/home/malik/Downloads/ex4/Motor.cpp" "/home/malik/Downloads/ex4/cmake-build-debug/CMakeFiles/Ex4.dir/Motor.cpp.o"
         "/home/malik/Downloads/ex4/MotorControl.cpp" "/home/malik/Downloads/ex4/cmake-build-debug/CMakeFiles/Ex4.dir/MotorControl.cpp.o"
         "/home/malik/Downloads/ex4/Odometry.cpp" "/home/malik/Downloads/ex4/cmake-build-debug/CMakeFiles/Ex4.dir/Odometry.cpp.o"
         "/home/malik/Downloads/ex4/PID.cpp" "/home/malik/Downloads/ex4/cmake-build-debug/CMakeFiles/Ex4.dir/PID.cpp.o"
+        "/home/malik/Downloads/ex4/WallFollow.cpp" "/home/malik/Downloads/ex4/cmake-build-debug/CMakeFiles/Ex4.dir/WallFollow.cpp.o"
         )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
