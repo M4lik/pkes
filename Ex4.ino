@@ -5,12 +5,12 @@
 #include <FrameStream.h>
 #include <Frameiterator.h>
 #include <avr/io.h>
-#include \"Distance.h\"
-#include \"Odometry.h\"
-#include \"PID.h\"
-#include \"everytime.h\"
-#include \"MotorControl.h\"
-#include \"WallFollow.h\"
+#include "Distance.h"
+#include "Odometry.h"
+#include "PID.h"
+#include "everytime.h"
+#include "MotorControl.h"
+#include "WallFollow.h"
 #include <math.h>
 
 
@@ -163,12 +163,12 @@ void setup()
     Serial.begin(OUTPUT__BAUD_RATE);
     Serial1.begin(OUTPUT__BAUD_RATE);
 
-    Serial.println(F(\"Willkommen zur PKeS Übung\"));
+    Serial.println(F("Willkommen zur PKeS Übung"));
 
-    Serial.println(F(\"PKes4\"));
+    Serial.println(F("PKes4"));
 
     //request reset of GUI
-    frm.print(\"!!\");
+    frm.print("!!");
     frm.end();
 
     delay(500);

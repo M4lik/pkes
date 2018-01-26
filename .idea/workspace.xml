@@ -33,13 +33,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="86008f5f-a905-4c70-b87a-1af78a14f4d6" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Distance.cpp" afterPath="$PROJECT_DIR$/Distance.cpp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Ex4.ino" afterPath="$PROJECT_DIR$/Ex4.ino" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MotorControl.cpp" afterPath="$PROJECT_DIR$/MotorControl.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MotorControl.h" afterPath="$PROJECT_DIR$/MotorControl.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Odometry.cpp" afterPath="$PROJECT_DIR$/Odometry.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WallFollow.cpp" afterPath="$PROJECT_DIR$/WallFollow.cpp" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -54,8 +48,8 @@
       <file leaf-file-name="Ex4.ino" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Ex4.ino">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="59" column="16" lean-forward="true" selection-start-line="59" selection-start-column="16" selection-end-line="59" selection-end-column="16" />
+            <state relative-caret-position="286">
+              <caret line="122" column="26" lean-forward="true" selection-start-line="122" selection-start-column="26" selection-end-line="122" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -64,8 +58,8 @@
       <file leaf-file-name="WallFollow.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/WallFollow.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="96" column="16" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="118" selection-end-column="1" />
+            <state relative-caret-position="268">
+              <caret line="97" column="5" lean-forward="true" selection-start-line="97" selection-start-column="5" selection-end-line="97" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -163,11 +157,13 @@
       <find>ter</find>
       <find>if \(state == ([1-5])\)</find>
       <find>setMoto</find>
+      <find>\&quot;</find>
       <find>\t</find>
     </findStrings>
     <replaceStrings>
       <replace>break; \n case $1:</replace>
       <replace />
+      <replace>&quot;</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -281,12 +277,12 @@
       <workItem from="1516954974811" duration="1474000" />
       <workItem from="1516958377805" duration="8575000" />
       <workItem from="1516968123601" duration="608000" />
-      <workItem from="1516968745687" duration="981000" />
+      <workItem from="1516968745687" duration="1245000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11703000" />
+    <option name="totallyTimeSpent" value="11967000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="55" y="25" width="1311" height="743" extended-state="6" />
@@ -605,14 +601,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WallFollow.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="96" column="16" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="118" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/WallFollow.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
@@ -629,10 +617,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/WallFollow.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="268">
+          <caret line="97" column="5" lean-forward="true" selection-start-line="97" selection-start-column="5" selection-end-line="97" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Ex4.ino">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="59" column="16" lean-forward="true" selection-start-line="59" selection-start-column="16" selection-end-line="59" selection-end-column="16" />
+        <state relative-caret-position="286">
+          <caret line="122" column="26" lean-forward="true" selection-start-line="122" selection-start-column="26" selection-end-line="122" selection-end-column="26" />
           <folding />
         </state>
       </provider>
