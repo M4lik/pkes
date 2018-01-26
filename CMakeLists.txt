@@ -12,4 +12,4 @@ add_executable(Ex4
         Odometry.cpp
         Odometry.h
         PID.cpp
-        PID.h Motor.cpp Motor.h Distance.cpp Distance.h)
+        PID.h WallFollow.cpp WallFollow.h Distance.cpp Distance.h)
