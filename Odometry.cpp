@@ -18,8 +18,8 @@ void initOdom() {
     DDRB &= ~(1 << PB4);
     DDRB &= ~(1 << PB7);
 
-    PCMSK0 |= (1 << PCINT3)// enable odometry Interrupts
-              | (1 << PCINT4);
+// enable odometry Interrupts
+    PCMSK0 |= (1 << PCINT3) | (1 << PCINT4);
     PCICR |= (1 << PCIE0); //Pin Change Interrupts
 
     sei();

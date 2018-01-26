@@ -1,4 +1,3 @@
-
 // -----------------------------------------------------------------
 // Exercise 4
 // -----------------------------------------------------------------
@@ -6,13 +5,20 @@
 #include <FrameStream.h>
 #include <Frameiterator.h>
 #include <avr/io.h>
-#include "Distance.h"
-#include "Odometry.h"
-#include "PID.h"
-#include "everytime.h"
-#include "MotorControl.h"
-#include "WallFollow.h"
+#include \"Distance.h\"
+#include \"Odometry.h\"
+#include \"PID.h\"
+#include \"everytime.h\"
+#include \"MotorControl.h\"
+#include \"WallFollow.h\"
 #include <math.h>
+
+
+
+volatile int32_t sumOfTicks=0;
+
+uint32_t distances[100];
+short i=0;
 
 
 #define OUTPUT__BAUD_RATE 57600
@@ -27,45 +33,42 @@ declarerunnerlist(GUI);
 
 // First level will be called by frm.run (if a frame is recived)
 beginrunnerlist();
-
 fwdrunner(!g, GUIrunnerlist); //forward !g to the second level (GUI)
 callrunner(!!, InitGUI);
-fwdrunner(ST, stickdata
-);
-
+fwdrunner(ST, stickdata);
 endrunnerlist();
 
 // GUI level
 beginrunnerlist(GUI);
-callrunner(es, CallbackSTOP
-);
-callrunner(ms, CallbackSTART
-);
-
+callrunner(es, CallbackSTOP);
+callrunner(ms, CallbackSTART);
 endrunnerlist();
 
-
-void stickdata(char *str, size_t length) {
+void stickdata(char* str, size_t length)
+{
     int left = (int) atof(str);
-    int i;
-    int right = 0;
-    for (i = 0; i < length; i++) {
-        if (*(str + i) == ',') {
-            right = (int) atof(str + i + 1);
+    int i; int right=0;
+    for(i=0; i<length; i++){
+        if (*(str+i)==','){
+            right=(int) atof(str+i+1);
             break;
         }
     }
-    setMotors(left, right);
+    setMotors(left,right);
 }
 
-void CallbackSTOP() {
+void CallbackSTOP()
+{
     deactivateMotors();
 }
 
 
-void CallbackSTART() {
+void CallbackSTART()
+{
     activateMotors();
 }
+
+
 
 
 /*
@@ -160,12 +163,12 @@ void setup()
     Serial.begin(OUTPUT__BAUD_RATE);
     Serial1.begin(OUTPUT__BAUD_RATE);
 
-    Serial.println(F("Willkommen zur PKeS Übung"));
+    Serial.println(F(\"Willkommen zur PKeS Übung\"));
 
-    Serial.println(F("PKes4"));
+    Serial.println(F(\"PKes4\"));
 
     //request reset of GUI
-    frm.print("!!");
+    frm.print(\"!!\");
     frm.end();
 
     delay(500);
@@ -196,7 +199,7 @@ void loop()
     every(10){
         i++;
         if(i==100)
-        \t\ti=0;
+        i=0;
         distances[i]=getDistance();
     }
 

@@ -35,22 +35,11 @@
     <list default="true" id="86008f5f-a905-4c70-b87a-1af78a14f4d6" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Distance.cpp" afterPath="$PROJECT_DIR$/Distance.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Distance.h" afterPath="$PROJECT_DIR$/Distance.h" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Ex4.ino" afterPath="$PROJECT_DIR$/Ex4.ino" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MotorControl.cpp" afterPath="$PROJECT_DIR$/MotorControl.cpp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MotorControl.h" afterPath="$PROJECT_DIR$/MotorControl.h" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Odometry.cpp" afterPath="$PROJECT_DIR$/Odometry.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PID.h" afterPath="$PROJECT_DIR$/PID.h" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WallFollow.cpp" afterPath="$PROJECT_DIR$/WallFollow.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WallFollow.h" afterPath="$PROJECT_DIR$/WallFollow.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Ex4.dir/DependInfo.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Ex4.dir/DependInfo.cmake" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Ex4.dir/build.make" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Ex4.dir/build.make" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Ex4.dir/cmake_clean.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Ex4.dir/cmake_clean.cmake" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Ex4.dir/link.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Ex4.dir/link.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/Ex4.cbp" afterPath="$PROJECT_DIR$/cmake-build-debug/Ex4.cbp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -62,31 +51,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Ex4.ino" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Ex4.ino" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Ex4.ino">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="776">
-              <caret line="208" column="1" lean-forward="false" selection-start-line="208" selection-start-column="1" selection-end-line="208" selection-end-column="1" />
-              <folding>
-                <marker date="1516968228328" expanded="true" signature="973:1214" ph="{...}" />
-                <marker date="1516968228328" expanded="true" signature="1236:1263" ph="{...}" />
-                <marker date="1516968228328" expanded="true" signature="1287:1312" ph="{...}" />
-                <marker date="1516968228328" expanded="true" signature="1315:1499" ph="/.../" />
-                <marker date="1516968228328" expanded="true" signature="1515:4863" ph="{...}" />
-                <marker date="1516968228328" expanded="true" signature="4865:4949" ph="/.../" />
-                <marker date="1516968228328" expanded="true" signature="4965:5461" ph="{...}" />
-                <marker date="1516968228328" expanded="true" signature="5463:5605" ph="/.../" />
-                <marker date="1516968228328" expanded="true" signature="5619:5832" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PID.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PID.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="36">
-              <caret line="4" column="77" lean-forward="false" selection-start-line="4" selection-start-column="77" selection-end-line="4" selection-end-column="77" />
+            <state relative-caret-position="340">
+              <caret line="59" column="16" lean-forward="true" selection-start-line="59" selection-start-column="16" selection-end-line="59" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -95,11 +64,29 @@
       <file leaf-file-name="WallFollow.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/WallFollow.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="538">
-              <caret line="106" column="1" lean-forward="false" selection-start-line="106" selection-start-column="1" selection-end-line="106" selection-end-column="1" />
-              <folding>
-                <element signature="e#0#21#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="250">
+              <caret line="96" column="16" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="118" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IMURegisters.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/IMURegisters.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="144">
+              <caret line="8" column="17" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="102" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PID.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PID.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="72">
+              <caret line="4" column="15" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="4" selection-end-column="77" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -107,28 +94,18 @@
       <file leaf-file-name="MotorControl.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MotorControl.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="538">
-              <caret line="54" column="1" lean-forward="false" selection-start-line="54" selection-start-column="1" selection-end-line="54" selection-end-column="1" />
+            <state relative-caret-position="196">
+              <caret line="35" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="54" selection-end-column="1" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WallFollow.h" pinned="false" current-in-tab="true">
+      <file leaf-file-name="WallFollow.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/WallFollow.h">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="252">
-              <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MotorControl.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MotorControl.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="16" column="24" lean-forward="false" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
+              <caret line="14" column="12" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="14" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -137,8 +114,8 @@
       <file leaf-file-name="PID.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PID.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="466">
-              <caret line="26" column="1" lean-forward="false" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="1" />
+            <state relative-caret-position="232">
+              <caret line="13" column="15" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="26" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -147,8 +124,8 @@
       <file leaf-file-name="Odometry.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Odometry.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="538">
-              <caret line="60" column="1" lean-forward="false" selection-start-line="60" selection-start-column="1" selection-end-line="60" selection-end-column="1" />
+            <state relative-caret-position="216">
+              <caret line="12" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="60" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -157,8 +134,18 @@
       <file leaf-file-name="Odometry.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Odometry.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="520">
-              <caret line="29" column="31" lean-forward="false" selection-start-line="29" selection-start-column="31" selection-end-line="29" selection-end-column="31" />
+            <state relative-caret-position="214">
+              <caret line="15" column="2" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="29" selection-end-column="31" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MotorControl.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MotorControl.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="234">
+              <caret line="13" column="13" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="16" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -173,9 +160,15 @@
       <find>state</find>
       <find>aumo</find>
       <find>DIST</find>
-      <find>\t</find>
       <find>ter</find>
+      <find>if \(state == ([1-5])\)</find>
+      <find>setMoto</find>
+      <find>\t</find>
     </findStrings>
+    <replaceStrings>
+      <replace>break; \n case $1:</replace>
+      <replace />
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -186,17 +179,17 @@
         <option value="$PROJECT_DIR$/Motor.h" />
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/Motor.cpp" />
-        <option value="$PROJECT_DIR$/Distance.cpp" />
         <option value="$PROJECT_DIR$/Distance.h" />
-        <option value="$PROJECT_DIR$/Ex4.ino" />
+        <option value="$PROJECT_DIR$/PID.cpp" />
+        <option value="$PROJECT_DIR$/PID.h" />
+        <option value="$PROJECT_DIR$/WallFollow.h" />
+        <option value="$PROJECT_DIR$/Distance.cpp" />
         <option value="$PROJECT_DIR$/MotorControl.cpp" />
         <option value="$PROJECT_DIR$/MotorControl.h" />
         <option value="$PROJECT_DIR$/Odometry.cpp" />
-        <option value="$PROJECT_DIR$/Odometry.h" />
-        <option value="$PROJECT_DIR$/PID.cpp" />
-        <option value="$PROJECT_DIR$/PID.h" />
         <option value="$PROJECT_DIR$/WallFollow.cpp" />
-        <option value="$PROJECT_DIR$/WallFollow.h" />
+        <option value="$PROJECT_DIR$/Odometry.h" />
+        <option value="$PROJECT_DIR$/Ex4.ino" />
       </list>
     </option>
   </component>
@@ -287,21 +280,23 @@
       <workItem from="1516954887666" duration="65000" />
       <workItem from="1516954974811" duration="1474000" />
       <workItem from="1516958377805" duration="8575000" />
-      <workItem from="1516968123601" duration="259000" />
+      <workItem from="1516968123601" duration="608000" />
+      <workItem from="1516968745687" duration="981000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10373000" />
+    <option name="totallyTimeSpent" value="11703000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="55" y="25" width="1311" height="743" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26365796" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26840854" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294893" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3283582" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -333,17 +328,71 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1516968228328" expanded="true" signature="973:1214" ph="{...}" />
-            <marker date="1516968228328" expanded="true" signature="1236:1263" ph="{...}" />
-            <marker date="1516968228328" expanded="true" signature="1287:1312" ph="{...}" />
-            <marker date="1516968228328" expanded="true" signature="1315:1499" ph="/.../" />
-            <marker date="1516968228328" expanded="true" signature="1515:4863" ph="{...}" />
-            <marker date="1516968228328" expanded="true" signature="4865:4949" ph="/.../" />
-            <marker date="1516968228328" expanded="true" signature="4965:5461" ph="{...}" />
-            <marker date="1516968228328" expanded="true" signature="5463:5605" ph="/.../" />
-            <marker date="1516968228328" expanded="true" signature="5619:5832" ph="{...}" />
-          </folding>
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WallFollow.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1800">
+          <caret line="100" column="9" lean-forward="true" selection-start-line="100" selection-start-column="9" selection-end-line="100" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PID.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="22" lean-forward="true" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PID.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Odometry.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="522">
+          <caret line="29" column="30" lean-forward="true" selection-start-line="29" selection-start-column="30" selection-end-line="29" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WallFollow.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="5" lean-forward="false" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Odometry.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="522">
+          <caret line="29" column="13" lean-forward="false" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MotorControl.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="1" lean-forward="false" selection-start-line="0" selection-start-column="1" selection-end-line="0" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ex4.ino">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -359,9 +408,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
           <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#21#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -401,17 +448,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1516968228328" expanded="true" signature="973:1214" ph="{...}" />
-            <marker date="1516968228328" expanded="true" signature="1236:1263" ph="{...}" />
-            <marker date="1516968228328" expanded="true" signature="1287:1312" ph="{...}" />
-            <marker date="1516968228328" expanded="true" signature="1315:1499" ph="/.../" />
-            <marker date="1516968228328" expanded="true" signature="1515:4863" ph="{...}" />
-            <marker date="1516968228328" expanded="true" signature="4865:4949" ph="/.../" />
-            <marker date="1516968228328" expanded="true" signature="4965:5461" ph="{...}" />
-            <marker date="1516968228328" expanded="true" signature="5463:5605" ph="/.../" />
-            <marker date="1516968228328" expanded="true" signature="5619:5832" ph="{...}" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -467,9 +504,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="522">
           <caret line="29" column="5" lean-forward="false" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
-          <folding>
-            <element signature="e#0#21#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -506,110 +541,98 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/IMURegisters.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Distance.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1854">
-          <caret line="103" column="4" lean-forward="false" selection-start-line="103" selection-start-column="4" selection-end-line="103" selection-end-column="4" />
+        <state relative-caret-position="106">
+          <caret line="67" column="3" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="95" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Distance.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="14" column="6" lean-forward="false" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
+        <state relative-caret-position="162">
+          <caret line="9" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="19" selection-end-column="6" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Ex4.ino">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="776">
-          <caret line="208" column="1" lean-forward="false" selection-start-line="208" selection-start-column="1" selection-end-line="208" selection-end-column="1" />
-          <folding>
-            <marker date="1516968228328" expanded="true" signature="973:1214" ph="{...}" />
-            <marker date="1516968228328" expanded="true" signature="1236:1263" ph="{...}" />
-            <marker date="1516968228328" expanded="true" signature="1287:1312" ph="{...}" />
-            <marker date="1516968228328" expanded="true" signature="1315:1499" ph="/.../" />
-            <marker date="1516968228328" expanded="true" signature="1515:4863" ph="{...}" />
-            <marker date="1516968228328" expanded="true" signature="4865:4949" ph="/.../" />
-            <marker date="1516968228328" expanded="true" signature="4965:5461" ph="{...}" />
-            <marker date="1516968228328" expanded="true" signature="5463:5605" ph="/.../" />
-            <marker date="1516968228328" expanded="true" signature="5619:5832" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/MotorControl.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="538">
-          <caret line="54" column="1" lean-forward="false" selection-start-line="54" selection-start-column="1" selection-end-line="54" selection-end-column="1" />
+        <state relative-caret-position="196">
+          <caret line="35" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="54" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/MotorControl.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="16" column="24" lean-forward="false" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
+        <state relative-caret-position="234">
+          <caret line="13" column="13" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="16" selection-end-column="24" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Odometry.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="538">
-          <caret line="60" column="1" lean-forward="false" selection-start-line="60" selection-start-column="1" selection-end-line="60" selection-end-column="1" />
+        <state relative-caret-position="216">
+          <caret line="12" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="60" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Odometry.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="520">
-          <caret line="29" column="31" lean-forward="false" selection-start-line="29" selection-start-column="31" selection-end-line="29" selection-end-column="31" />
+        <state relative-caret-position="214">
+          <caret line="15" column="2" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="29" selection-end-column="31" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/PID.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="466">
-          <caret line="26" column="1" lean-forward="false" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="1" />
+        <state relative-caret-position="232">
+          <caret line="13" column="15" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="26" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/PID.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="4" column="77" lean-forward="false" selection-start-line="4" selection-start-column="77" selection-end-line="4" selection-end-column="77" />
+        <state relative-caret-position="72">
+          <caret line="4" column="15" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="4" selection-end-column="77" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/WallFollow.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="538">
-          <caret line="106" column="1" lean-forward="false" selection-start-line="106" selection-start-column="1" selection-end-line="106" selection-end-column="1" />
-          <folding>
-            <element signature="e#0#21#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="250">
+          <caret line="96" column="16" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="118" selection-end-column="1" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/WallFollow.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
-          <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+          <caret line="14" column="12" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="14" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IMURegisters.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="17" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="102" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ex4.ino">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="59" column="16" lean-forward="true" selection-start-line="59" selection-start-column="16" selection-end-line="59" selection-end-column="16" />
           <folding />
         </state>
       </provider>

@@ -29,8 +29,6 @@ extern uint32_t distances[];
  */
 void configADC() {
     ADCSRA |= (1 << ADEN); //Enable ADC
-    //ADCSRA |= (1<<ADATE); //Enable AUTO-Trigger
-    //ADMUX |= (1<<ADLAR); //Enable 8-bit precision
     ADMUX |= (1 << REFS0); //Reference voltage 3300mv
 
 }
@@ -63,8 +61,6 @@ int16_t readADC(uint8_t channel) {
 uint16_t linearizeSR(uint16_t distmV) {
     if (distmV > 3000) return 0; //too close
     if (distmV < 600) return 0; //too far away
-//if(distmV%100 != 0) return (LookupShort[(int)floor((distmV-600)/100)]+
-    //                          LookupShort[(int)ceil((distmV-600)/100)])/2; //Interpolation
     return LookupShort[(int) floor((distmV - 600) / 100)]; //LookUp
 
 }
@@ -76,8 +72,6 @@ uint16_t linearizeSR(uint16_t distmV) {
 uint16_t linearizeLR(uint16_t distmV) {
     if (distmV > 2700) return 0; //too close
     if (distmV < 1000) return 0; //too far away
-//if(distmV%100 != 0) return (LookupShort[(int)floor((distmV-1000)/100)]+
-//                            LookupShort[(int)ceil((distmV-1000)/100)])/2; //Interpolation
     return LookupLong[(int) floor((distmV - 1000) / 100)];
 
 }
@@ -92,7 +86,6 @@ uint16_t getDistance() {   //"Better" distances
 
 
 }
-
 
 uint32_t getMeanDistance() {
     uint32_t result = 0;

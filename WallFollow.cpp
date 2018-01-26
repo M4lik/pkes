@@ -49,7 +49,7 @@ void findWall() {
 void turnWall() {
     if (!rotating) rotation(shortestDistanceTicks);
     if (isDoneRotating()) {
-        \tstate = 3;
+        state = 3;
     }
 }
 
@@ -99,9 +99,21 @@ void parallelize() {
 }
 
 void motorMain() {
-    if (state == 1) findWall();
-    if (state == 2) turnWall();
-    if (state == 3) parallelize();
-    if (state == 4) wait();
-    if (state == 5) drive();
+    switch (state) {
+        default:
+        case 1:
+            findWall();
+            break;
+        case 2:
+            turnWall();
+            break;
+        case 3:
+            parallelize();
+            break;
+        case 4:
+            wait();
+            break;
+        case 5:
+            drive();
+    }
 }
